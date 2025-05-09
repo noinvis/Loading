@@ -1,0 +1,89 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body {
+    overflow: hidden;
+}
+.preloader {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    background: radial-gradient(rgba(0,0,0,0) 50%,rgba(0,0,0,0.8));
+    z-index: 10;
+}
+.preloader .preloader__box {
+    position: absolute;
+    width: 345px;
+    height: 30px;
+    top: 50%;
+    left: 50%;
+    margin: -15px 0 0 -150px;
+}
+.preloader .preloader__box div {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    background: #CCC;
+    float: left;
+    text-align: center;
+    line-height: 30px;
+    font-family: Verdana;
+    font-size: 20px;
+    color: #FFF;
+}
+.preloader .preloader__box div:nth-child(1) {
+    background: #3366FF;
+    margin-right: 15px;
+    animation: movement .6s ease 0ms infinite alternate;
+}
+.preloader .preloader__box div:nth-child(2) {
+    background: #3366FF;
+    margin-right: 15px;
+    animation: movement .6s ease 75ms infinite alternate;
+}
+.preloader .preloader__box div:nth-child(3) {
+    background: #3366FF;
+    margin-right: 15px;
+    animation: movement .6s ease 150ms infinite alternate;
+}
+.preloader .preloader__box div:nth-child(4) {
+    background: #3366FF;
+    margin-right: 15px;
+    animation: movement .6s ease 225ms infinite alternate;
+}
+.preloader .preloader__box div:nth-child(5) {
+    background: #3366FF;
+    margin-right: 15px;
+    animation: movement .6s ease 300ms infinite alternate;
+}
+.preloader .preloader__box div:nth-child(6) {
+    background: #3366FF;
+    margin-right: 15px;
+    animation: movement .6s ease 375ms infinite alternate;
+}
+.preloader .preloader__box div:nth-child(7) {
+    background: #3366FF;
+    margin-right: 15px;
+    animation: movement .6s ease 450ms infinite alternate;
+}
+.preloader .preloader__box div:nth-child(8) {
+    background: #3366FF;
+    animation: movement .6s ease 525ms infinite alternate;
+}
+
+@keyframes movement {
+    from {
+        transform: scale(1.0) translateY(0px) rotateX(0deg);
+        box-shadow: 0 0 0 rgba(0,0,0,0);
+    }
+    to {
+        transform: scale(1.5) translateY(-35px) rotateX(45deg);
+        box-shadow: 0 25px 40px rgba(0,0,0,0.4);
+        background: #3399FF;
+    }
+}
